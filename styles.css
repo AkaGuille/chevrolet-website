@@ -128,35 +128,45 @@ h2{
 
 /*footer*/
 
-.footer-links{
-    background-color: #D9D9D9;
-    font-size: 14px;
-    padding: 35px 0;
-
+footer{
+    background-color: aqua;
 }
 
-.footer-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+#logo-footer{
+    width: 150px;
+    height: 85px;
+    margin: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#footer-container{
+    display: flex;
+    justify-content: space-evenly;
     align-items: flex-start;
-    justify-content: flex-start;
-
-}
-
-.footer-container ul{
-    margin: 0 auto;
-}
-
-.footer-container ul li{
-    line-height: 2.1;
-}
-
-.footer{
     background-color: #D9D9D9;
-    font-size: 12px;
-    padding: 20px 0;
-    text-align: center;
-    padding-bottom: 20px;
+}
 
+
+#footer-container ul{
+    width: 1000px;
+}
+
+#footer-container li{
+    margin-top: 12%;
+    margin-left: 10%;
+    padding: 0%;
+}
+
+#footer-container h1{
+    font-size: 20px;
+    color: #5D5D5D;
+    margin-bottom: 4%;
+}
+
+#footer-container p{
+    color: #7D7D7D;
+    font-weight:lighter;
+    font-size: 15px;
+    margin-bottom: 4%;
 }
