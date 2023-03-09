@@ -1,34 +1,42 @@
 *{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     color: black;
     text-decoration: none;
+    border: none;
 }
 
-.noticias{
-    padding: 20px;
-    padding-right: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 10px;
+
+#landing-page{
+    background-color: aqua;
+    position: relative;
 }
 
-.noticias img{
+#landing-page img{
+    display: block;
     width: 100%;
-    height: 300px;
-    padding: 10px;
-}
-.noticias h3{
-    padding: 10px;
-}
-.noticias a{
-    padding: 10px;
 }
 
-.noticias p{
-    padding-left: 10px;
+#landing-page-text{
+    position: absolute; 
+    top: 50%; 
+    left: 30%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+    color: #ffffff; 
+    text-align: flex-start; 
+}
+
+#landing-page-text h1{
+    font-size: 75px;
+}
+
+#landing-page-text p{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: light;
 }
 
 .nav-main{
@@ -72,7 +80,7 @@
     border-bottom: 2px solid rgb(201, 165, 63);
 }
 
-.landing-page img{
+.carousel img{
     width: 100%;
 }
 
@@ -98,8 +106,8 @@ ul li a{
 
 }
 
-#landing-page h2{
-    font-family: 'Roboto';
+#carousel h2{
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -126,9 +134,8 @@ ul li a{
 }
 
 
-/*footer*/
-
 footer{
+    margin-top: 3%;
     background-color: aqua;
 }
 
@@ -221,7 +228,63 @@ footer{
 }
 
 .card-parts-section{
-    display: block;
+    display: flexbox;
     justify-content: center;
     align-items: center;
+}
+
+.card-parts-section h2{
+    display: flex;
+    color: #5D5D5D;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.card-parts-section p{
+    display: flex;
+    color: #5D5D5D;
+    justify-content: center;
+}
+
+#btn-services{
+    background-color: #6f6f6f; /* Green */
+    border: none;
+    color: rgb(244, 244, 244);
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+#p-services{
+    display: inline-block;
+}
+
+.servicio-pos .contenido{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.servicio-pos .contenido h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 78px;
+    text-align: left;
+    color: rgb(93, 93, 93);
+
+}
+
+.serviceimg{
+    display: inline-block;
+    margin-left: 30px;
 }
