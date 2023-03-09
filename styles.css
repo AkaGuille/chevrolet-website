@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -6,84 +6,134 @@
     color: black;
     text-decoration: none;
     border: none;
+    box-sizing: border-box;
 }
 
-.nav-main  ul li a{
+.container-slider {
+    width: 100%;
+    max-width:900px;
+    margin: auto; 
+    overflow: hidden;
+    position: relative;
+} 
+
+.slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+}
+
+
+.slider__section {
+width: 100%;
+
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.slider__btn {
+    position: absolute;
+    font-size: 60px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(93, 93, 93);
+    transform: translateY(-90%);
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.slider__btn:hover {
+    color: rgb(201, 165, 63);
+
+}
+.slider__btn--left {
+    left: 10px;
+}
+.slider__btn--right {
+    right: 10px;
+}
+
+.nav-main ul li a {
     color: black;
 
 }
 
 
-#landing-page{
+#landing-page {
     background-color: rgb(37, 37, 37);
     position: relative;
 }
 
-#landing-page img{
+#landing-page img {
     display: block;
     width: 100%;
     height: 700p;
 }
 
-#landing-page-button{
-    position: absolute; 
-    top: 70%; 
-    left: 18%; 
-    transform: translate(-50%, -50%); 
+#landing-page-button {
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    transform: translate(-50%, -50%);
     z-index: 2;
-    text-align: flex-start; 
+    text-align: flex-start;
 }
 
-#main-btn{
+#main-btn {
     width: 20px;
     height: 10px;
-    background-color:#E9E9E9;
+    background-color: #E9E9E9;
 }
 
-#landing-page-text{
-    position: absolute; 
-    top: 50%; 
-    left: 30%; 
-    transform: translate(-50%, -50%); 
-    z-index: 2; 
-    color: #ffffff; 
-    text-align: flex-start; 
-}
-
-#corvette-page img{
-        width: 100%;
-    
-}
-
-#corvette-text{
+#landing-page-text {
     position: absolute;
-    margin-top: 220px;
-    margin-left: 220px;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #ffffff;
+    text-align: flex-start;
 }
 
-#corvette-text h1{
+#corvette-page img {
+    width: 100%;
+
+}
+
+#corvette-text {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 200px;
+}
+
+#corvette-text h1 {
     font-size: 75px;
 }
 
-#corvette-text p{
-    color: #ffffff;
-    font-size: 30px;
+#corvette-text p {
+    margin-top: 10px;
+    color: #e4e4e4;
+    font-size: 15px;
     font-weight: light;
 }
 
 
 
-#landing-page-text h1{
+#landing-page-text h1 {
     font-size: 75px;
 }
 
-#landing-page-text p{
+#landing-page-text p {
     color: #ffffff;
     font-size: 30px;
     font-weight: light;
 }
 
-.nav-main{
+.nav-main {
 
     font-size: 17px;
     display: flex;
@@ -94,29 +144,30 @@
 
 }
 
-.nav-brand{
+.nav-brand {
     width: 50px;
 }
 
-.nav-main img{
+.nav-main img {
     width: 110px;
     height: 40px;
     padding-left: 10px;
 }
 
-.nav-main ul{
+.nav-main ul {
     display: flex;
     margin-top: 1%;
     justify-content: center;
 }
 
 
-.nav-main ul li{
+.nav-main ul li {
     padding: 10px;
     list-style: none;
 
 }
-.nav-main ul li a{
+
+.nav-main ul li a {
     padding: 2px;
     text-decoration: none;
 }
@@ -125,7 +176,7 @@
     border-bottom: 2px solid rgb(201, 165, 63);
 }
 
-.carousel img{
+.carousel img {
     width: 100%;
 }
 
@@ -133,25 +184,25 @@
     border-bottom: 3px solid black;
 }
 
-ul li{
+ul li {
     padding: 10px;
     list-style: none;
 }
 
-ul li a{
+ul li a {
     padding: 2px;
     text-decoration: none;
 
 }
 
 
-.nav-main ul.nav-menu{
+.nav-main ul.nav-menu {
     flex: 1;
     margin-left: 20px;
 
 }
 
-#carousel h2{
+#carousel h2 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -161,7 +212,7 @@ ul li a{
     color: rgb(24, 24, 24);
 }
 
-#categories{
+#categories {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -169,22 +220,31 @@ ul li a{
     padding-top: 2%;
 }
 
-.categories-titles{
+#categories-section h2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: rgb(20, 20, 20);
+    font-size: 50px;
+
+}
+
+.categories-titles {
     padding-right: 2%;
     padding-left: 2%;
 }
 
-.rectangle{
+.rectangle {
     margin-top: -150px;
 }
 
 
-footer{
+footer {
     margin-top: 3%;
     background-color: aqua;
 }
 
-#logo-footer{
+#logo-footer {
     width: 150px;
     height: 85px;
     margin: 2%;
@@ -192,7 +252,7 @@ footer{
     margin-right: 3%;
 }
 
-#footer-container{
+#footer-container {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -200,60 +260,60 @@ footer{
 }
 
 
-#footer-container ul{
+#footer-container ul {
     width: 1000px;
 }
 
-#footer-container li{
+#footer-container li {
     margin-top: 12%;
     margin-left: 10%;
     padding: 0%;
 }
 
-#footer-container h1{
+#footer-container h1 {
     font-size: 20px;
     color: #5D5D5D;
     margin-bottom: 4%;
 }
 
-#footer-container p{
+#footer-container p {
     color: #7D7D7D;
-    font-weight:lighter;
+    font-weight: lighter;
     font-size: 15px;
     margin-bottom: 4%;
 }
 
-#parts-section{
+#parts-section {
     background-color: #8D8D8D;
 }
 
-#parts-title-container{
+#parts-title-container {
     display: flex;
 }
 
-#parts-title-container img{
+#parts-title-container img {
     width: 25%;
 }
 
-#first-title-parts{
+#first-title-parts {
     font-size: 70px;
     font-weight: bold;
     color: white;
 }
 
-#second-title-parts{
+#second-title-parts {
     font-size: 50px;
     font-weight: 500;
     color: white;
 }
 
-#parts-title-container article{
+#parts-title-container article {
     display: block;
     margin-top: 4%;
     margin-left: 3%;
 }
 
-#parts-subtitle{
+#parts-subtitle {
     color: #2e2d2d;
     justify-content: flex-start;
     font-size: 25px;
@@ -261,18 +321,18 @@ footer{
     margin-top: 1%;
 }
 
-#featured-parts-section{
+#featured-parts-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 1%;
 }
 
-.card-parts-section img{
+.card-parts-section img {
     width: 400px;
 }
 
-#location-text{
+#location-text {
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
@@ -281,27 +341,28 @@ footer{
     margin-left: 30px;
 }
 
-.card-parts-section{
+.card-parts-section {
     display: flexbox;
     justify-content: center;
     align-items: center;
 }
 
-.card-parts-section h2{
+.card-parts-section h2 {
     display: flex;
     color: #5D5D5D;
     justify-content: center;
     margin-top: 2%;
 }
 
-.card-parts-section p{
+.card-parts-section p {
     display: flex;
     color: #5D5D5D;
     justify-content: center;
 }
 
-#btn-services{
-    background-color: #6f6f6f; /* Green */
+#btn-services {
+    background-color: #6f6f6f;
+    /* Green */
     border: none;
     color: rgb(244, 244, 244);
     padding: 15px 32px;
@@ -310,15 +371,15 @@ footer{
     text-decoration: none;
     display: inline-block;
     font-size: 17px;
-    border-radius: 12px;
+    border-radius: 10px;
     display: inline-block;
 }
 
-#p-services{
+#p-services {
     display: inline-block;
 }
 
-.servicio-pos .contenido{
+.servicio-pos .contenido {
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
     justify-content: space-between;
@@ -327,7 +388,7 @@ footer{
     padding-left: 30px;
 }
 
-.servicio-pos .contenido h2{
+.servicio-pos .contenido h2 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -338,7 +399,52 @@ footer{
 
 }
 
-.serviceimg{
+.serviceimg {
     display: inline-block;
     margin-left: 30px;
+}
+
+#btn-corvette {
+    background-color: #f2f2f2;
+    /* Green */
+    border: none;
+    color: rgb(93, 93, 93);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#btn-corvette i {
+    color: rgb(93, 93, 93);
+
+}
+
+
+#btn-euv1 {
+    margin-left: 160px;
+    background-color: #f2f2f2;
+    border: none;
+    color: rgb(93, 93, 93);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#btn-euv2 {
+    margin-left: 10px;
+    background-color: #8a8a8a;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
 }
