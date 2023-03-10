@@ -9,11 +9,15 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+
+}
+
 .container-slider {
     width: 100%;
     max-width:900px;
     margin: auto; 
-    overflow: hidden;
     position: relative;
 } 
 
@@ -21,6 +25,9 @@
     display: flex;
     width: 400%;
     height: 400px;
+    margin-left: -100%;
+    overflow: hidden;
+
 }
 
 
@@ -31,8 +38,10 @@ width: 100%;
 
 .slider__img {
     display: block;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
 }
 .slider__btn {
     position: absolute;
@@ -229,9 +238,44 @@ ul li a {
 
 }
 
+
+#container-slider h2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: rgb(93, 93, 93);
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+#container-slider{
+    margin-bottom: 30px;
+}
+
 .categories-titles {
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+input[type="radio"]{display:none}
+
+label{
+    cursor: pointer;
+}
+
+#filter{
+    display: flex;
+}
+
+.suvs img{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+.suvs{
+    background-color: aqua;
+    width: 100%;
 }
 
 .rectangle {
@@ -406,9 +450,9 @@ footer {
 
 #btn-corvette {
     background-color: #f2f2f2;
-    /* Green */
+    Greergb(49, 49, 49);
     border: none;
-    color: rgb(93, 93, 93);
+    color: rgb(65, 65, 65);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -448,3 +492,4 @@ footer {
     font-size: 16px;
     border-radius: 10px;
 }
+

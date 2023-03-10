@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
@@ -92,15 +92,30 @@
         <section id="categories-section">
             <h2>Find the vehicle of your dreams</h2>
             <ul id="categories">
-                <li onclick="handleCategoriesClick(event)" class="categories-titles">SUVs</li>
-                <li onclick="handleCategoriesClick(event)" class="categories-titles">Trucks</li>
-                <li onclick="handleCategoriesClick(event)" class="categories-titles">Electric</li>
-                <li onclick="handleCategoriesClick(event)" class="categories-titles">Cars</li>
-                <li onclick="handleCategoriesClick(event)" class="categories-titles">Performance</li>
-                <li onclick="handleCategoriesClick(event)" class="categories-titles">Commercial</li>
+                <input type="radio" name="filter" checked="yes" id="suvs"></input>
+                <label for="suvs" class="categories-titles">SUVs</label>
+
+                <input type="radio" name="filter" checked="yes" id="trucks"></input>
+                <label for="trucks" class="categories-titles">Trucks</label>
+
+                <input type="radio" name="filter" checked="yes" id="electric"></input>
+                <label for="electric" class="categories-titles">Electric</label>
+
+                <input type="radio" name="filter" checked="yes" id="cars"></input>
+                <label for="cars" class="categories-titles">Cars</label>
+
+                <input type="radio" name="filter" checked="yes" id="performance"></input>
+                <label for="performance" class="categories-titles">Performance</label>
+
+                <input type="radio" name="filter" checked="yes" id="commercial"></input>
+                <label for="commercial" class="categories-titles">Commercial</label>
             </ul>
 
-            <hr size="10s">
+            <section id="filter-options">
+                <section class="suvs">
+                    <article> <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/suv/01-images/2023-suvs-tahoe.jpg?imwidth=960" alt=""> </article>
+                </section>
+            </section>
 
         </section>
 
@@ -123,15 +138,11 @@
 
         </section>
 
-
-
-
-
-
-
         <!--Carousel-->
 
         <div id="container-slider">
+
+            <h2>BOLT EUV</h2>
 
             <div class="slider" id="slider">
 
@@ -159,25 +170,14 @@
                 </div>
             </div>
 
-            <div class="slider__btn slider__btn--right">&#62;</div>
-            <div class="slider__btn slider__btn--left">&#60;</div>
+            <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+            <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
 
         </div>
 
+        
 
 
-
-        <section id="carousel">
-            <h2 style="color: rgb(146, 146, 146); " class="title2">BOLT EUV</h2>
-            <div style="text-align: center; z-index: 2;">
-                <img src="https://www.chevrolet.ca/content/dam/chevrolet/na/canada/english/index/hybrid-and-electric/2023-bolt-euv/jellies/v2/2023-bolteuv-1fg48-2lz-gsj-trimselector.png?imwidth=960"
-                    alt="" width="40%">
-            </div>
-            <div class="rectangle" style="width: 100%; height: 60px;background-color: rgb(201, 165, 63); z-index: 1;">
-            </div>
-        </section>
-
-        <hr size="220s" color="#">
 
         <!--Servicio posventa-->
 
