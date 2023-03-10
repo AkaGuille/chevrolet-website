@@ -90,30 +90,142 @@
         <!--Categories Section-->
 
         <section id="categories-section">
-            <h2>Find the vehicle of your dreams</h2>
-            <ul id="categories">
+            <h2 id="categories-title">Find the vehicle of your dreams</h2>
                 <input type="radio" name="filter" checked="yes" id="suvs"></input>
-                <label for="suvs" class="categories-titles">SUVs</label>
-
-                <input type="radio" name="filter" checked="yes" id="trucks"></input>
+                <label  id ="main-title-cars" for="suvs" class="categories-titles">SUVs</label>
+    
+                <input type="radio" name="filter" id="trucks"></input>
                 <label for="trucks" class="categories-titles">Trucks</label>
-
-                <input type="radio" name="filter" checked="yes" id="electric"></input>
+    
+                <input type="radio" name="filter" id="electric"></input>
                 <label for="electric" class="categories-titles">Electric</label>
-
-                <input type="radio" name="filter" checked="yes" id="cars"></input>
+    
+                <input type="radio" name="filter" id="cars"></input>
                 <label for="cars" class="categories-titles">Cars</label>
-
-                <input type="radio" name="filter" checked="yes" id="performance"></input>
+    
+                <input type="radio" name="filter" id="performance"></input>
                 <label for="performance" class="categories-titles">Performance</label>
-
-                <input type="radio" name="filter" checked="yes" id="commercial"></input>
-                <label for="commercial" class="categories-titles">Commercial</label>
-            </ul>
+            
 
             <section id="filter-options">
                 <section class="suvs">
-                    <article> <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/suv/01-images/2023-suvs-tahoe.jpg?imwidth=960" alt=""> </article>
+                    <article> 
+                        <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/suv/01-images/2023-suvs-tahoe.jpg?imwidth=960" alt=""> 
+                        <div class="texts-article-vehicles">
+                            <h2>Captiva</h2>
+                            <p>Since $20,250</p>
+                        </div>
+                    </article>
+                    <article> 
+                        <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2019/03/20190305-CHEVROLET-CRECIO-EN-VENTAS-DE-SUV-Y-PICK-UPS-EN-COLOMBIA-01.jpg" alt="">
+                        <div class="texts-article-vehicles">
+                            <h2>Tahoe</h2>
+                            <p>Since $25,250</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2018/06/20180622-CHEVROLET-BLAZER-2019-01.jpg" alt=""> 
+                        <div class="texts-article-vehicles">
+                            <h2>Blazer</h2>
+                            <p>Since $40,250</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="trucks">
+                    <article> 
+                        <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/trucks/04-images/2024-silveradohd-segment.jpg?imwidth=960" alt=""> 
+                        <div class="texts-article-vehicles">
+                            <h2>Colorado</h2>
+                            <p>Since $38,250</p>
+                        </div>
+                    </article>
+                    <article> 
+                        <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/trucks/04-images/2024-silveradoev-segment.jpg?imwidth=960" alt="">
+                        <div class="texts-article-vehicles">
+                            <h2>Silverado</h2>
+                            <p>Since $34,250</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://www.chevrolet.ca/content/dam/chevrolet/na/canada/english/index/trucks/01-images/sustain-march2022/01-images/2022-colorado-masthead-01.jpg?imwidth=960" alt=""> 
+                        <div class="texts-article-vehicles">
+                            <h2>Silverado HD</h2>
+                            <p>Since $31,250</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="electric">
+                    <article> 
+                        <img src="https://www.chevrolet.ca/content/dam/chevrolet/na/canada/english/index/hybrid-and-electric/electric/masthead/2023-equinox-ev-design-01.jpg?imwidth=960" alt=""> 
+                        <div class="texts-article-vehicles">
+                            <h2>Equinox EV</h2>
+                            <p>Since $55,250</p>
+                        </div>
+                    </article>
+                    <article> 
+                        <img src="https://thumbor.forbes.com/thumbor/fit-in/960x/filters:format(jpg)/https://www.forbes.com/wheels/wp-content/uploads/2022/09/2024ChevyEquinoxEV_Main.png" alt="">
+                        <div class="texts-article-vehicles">
+                            <h2>Bolt EUV</h2>
+                            <p>Since $46,357</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://media.ed.edmunds-media.com/chevrolet/bolt-ev/2023/oem/2023_chevrolet_bolt-ev_4dr-hatchback_2lt_fq_oem_1_1280.jpg" alt=""> 
+                        <div class="texts-article-vehicles">
+                            <h2>Bolt EV</h2>
+                            <p>Since $40,740</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="cars">
+                    <article> 
+                        <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2020/11/20201113-CHEVROLET-JOY-COLOMBIA-PRECIOS-VERSIONES-CARACTERISTICAS-01.jpg" alt=""> 
+                        <div class="texts-article-vehicles">
+                            <h2>Joy</h2>
+                            <p>Since $13,534</p>
+                        </div>
+                    </article>
+                    <article> 
+                        <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2019/03/20190322-CHEVROLET-ONIX-SEDAN-2020-REDLINE-PRIMERA-IMAGEN-OFICIAL-01.jpg" alt="">
+                        <div class="texts-article-vehicles">
+                            <h2>Onix Sedan</h2>
+                            <p>Since $17,357</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2020/11/20201117-CHEVROLET-JOY-COLOMBIA-5-PUNTOS-CLAVE-01.jpg" alt=""> 
+                        <div class="texts-article-vehicles">
+                            <h2>Joy Sedan</h2>
+                            <p>Since $15,740</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="performance">
+                    <article> 
+                        <img src="https://hips.hearstapps.com/es.h-cdn.co/cades/contenidos/47760/2018-chevrolet-camaro-zl1-1le-104-1.jpg" alt=""> 
+                        <div class="texts-article-vehicles">
+                            <h2>Camaro ZL1</h2>
+                            <p>Since $33,149</p>
+                        </div>
+                    </article>
+                    <article> 
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/160bf818-c8-corvette-1-1563520855.jpg?crop=1.00xw:0.892xh;0,0.0554xh&resize=1200:*" alt="">
+                        <div class="texts-article-vehicles">
+                            <h2>Corvette C7</h2>
+                            <p>Since $105,300</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://www.topgear.com/sites/default/files/cars-car/image/2020/02/2020-corvette-d55_1190.jpg" alt=""> 
+                        <div class="texts-article-vehicles">
+                            <h2>Corvette Stingray</h2>
+                            <p>Since $65,153</p>
+                        </div>
+                    </article>
                 </section>
             </section>
 
@@ -124,10 +236,8 @@
 
         <section id="corvette-page">
             <section id="corvette-text">
-                <h3>2023</h3>
                 <h1>CORVETTE C7</h1>
                 <button id="btn-corvette">Learn more </button>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
             </section>
             <div>
                 <img src="https://wallpaperaccess.com/full/87856.jpg" alt="">
@@ -142,65 +252,74 @@
 
         <div id="container-slider">
 
-            <h2>BOLT EUV</h2>
-
             <div class="slider" id="slider">
 
+                <!--Imagen1 BOLT EUV-->
 
                 <div class="slider__section">
-                    <img src="https://www.chevrolet.ca/content/dam/chevrolet/na/canada/english/index/hybrid-and-electric/2023-bolt-euv/jellies/v2/2023-bolteuv-1fg48-2lz-gsj-trimselector.png?imwidth=960" alt="" class="slider__img">
+                    <img src="https://assets.static-gm.com/Assets/63a90616-1fa5-40c9-814a-17f4de353956/a7e32d73-c4aa-4142-a0f6-0cde1af569e9/v-1645558907/Desktop.webp" alt="" class="slider__img1">
+                    <h1>CHEVROLET ONIX</h1>
+                    <p>A suburban sports car</p>
+                    <button id="btn-services">Learn more</button>
+
+
+
+                </div>
+
+                 <!--Imagen2 CORVETTE-->
+
+                <div class="slider__section">
+                    <img src="https://www.valleychevy.com/wp-content/uploads/2021/11/color-picker_0001_22CHSpark-Summit-White.png" alt="" class="slider__img2">
+                    <h1>SPARK</h1>
+                    <p>The future of ecologycal vehicles</p>
+                    <button id="btn-services">Learn more</button>
+
+
+                </div>
+                
+                 <!--Imagen3 CAMARO-->
+
+                <div class="slider__section">
+                    <img src="https://assets.static-gm.com/Assets/925e467e-b354-4c6a-bee7-094286fb63d9/6905cfd6-7a9e-426a-9544-7e1a634c8c8e/v-1621478869/Desktop.png" alt="" class="slider__img3">
+                    <h1>CHEVROLET CAMARO ZL1</h1>
+                    <p>A suburban sports car</p>
+                    <button id="btn-services">Learn more</button>
+
                 
                 </div>
 
-                
-                <div class="slider__section">
-                    <img src="https://www.pngplay.com/wp-content/uploads/13/Corvette-PNG-Images-HD.png" alt="" class="slider__img">
-                </div>
-
+                 <!--Imagen4 SILVERADO-->
 
                 <div class="slider__section">
-                    <img src="https://assets.static-gm.com/Assets/925e467e-b354-4c6a-bee7-094286fb63d9/6905cfd6-7a9e-426a-9544-7e1a634c8c8e/v-1621478869/Desktop.png" alt="" class="slider__img">
-                
-                </div>
+                    <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2023/trucks/silverado-ld/01-images/trims/png/2023-silverado1500-cc10543-1lt-gxd-trimselector.png?imwidth=960" alt="" class="slider__img4">
+                    <h1>SILVERADO TRUCK</h1>
+                    <p>A suburban sports car</p>
+                    <button id="btn-services">Learn more</button>
 
 
-                <div class="slider__section">
-                    <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2023/trucks/silverado-ld/01-images/trims/png/2023-silverado1500-cc10543-1lt-gxd-trimselector.png?imwidth=960" alt="" class="slider__img">
                 
                 </div>
             </div>
+
+             <!--Botones del slider-->
 
             <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
             <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
 
         </div>
-
         
-
-
-
         <!--Servicio posventa-->
 
-        <section class="servicio-pos">
-
-            <section class="contenido">
+        <section id="post-service">
+            <section id="content-service">
                 <h2>AFTER SALES SERVICE</h2>
-                <p id="p-services">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quod provident
-                    inventore reprehenderit magnam odit ipsum? </p>
                 <button id="btn-services">Contact</button>
             </section>
-
-            <hr width="30px">
-
-            <section class="serviceimg">
-                <img src="https://fixedopsdigital.s3.amazonaws.com/oem/chevrolet/service/horizontal-images/general/chevrolet-general-service-1920x511-min.jpg"
-                    alt="" heigth="50%" width="85%">
-            </section>
-
         </section>
+        <p id="p-services">Chevrolet after sales service is always ready for you. even in the worst situation<br>
+            our team of professionals will be able to help you out. </p>
+        <img id ="service-img" src="https://fixedopsdigital.s3.amazonaws.com/oem/chevrolet/service/horizontal-images/general/chevrolet-general-service-1920x511-min.jpg">
         <hr>
-
-
 
 
         <!--Parts Section-->

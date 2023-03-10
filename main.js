@@ -9,7 +9,7 @@ slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 
 function moveRight() {
     let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
-    slider.style.marginLeft = "-200%";
+    slider.style.marginLeft = "-300%";
     slider.style.transition = "all 0.5s";
     setTimeout(function(){
         slider.style.transition = "none";
@@ -42,22 +42,3 @@ btnLeft.addEventListener('click', function(){
     moveLeft();
     
 })
-
-
-const categories = [
-    {
-        name: 'SUVs',
-        cars: [{
-            title: '',
-            price: 123,
-            model: 2020,
-            image: ''
-        }]
-    }
-]
-
-const selectedCategory = categories[0];
-
-function handleCategoriesClick(event){
- 
-}
