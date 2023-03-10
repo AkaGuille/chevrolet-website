@@ -10,7 +10,7 @@ slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 function moveRight() {
     let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
     slider.style.marginLeft = "-300%";
-    slider.style.transition = "all 0.5s";
+    slider.style.transition = "all 0.3s";
     setTimeout(function(){
         slider.style.transition = "none";
         slider.insertAdjacentElement('beforeend', sliderSectionFirst);
