@@ -113,6 +113,11 @@ body {
     background-color: #E9E9E9;
 }
 
+#main-btn hover:{
+        opacity: .7;
+        cursor: grabbing;
+}
+
 #landing-page-text {
     position: absolute;
     top: 45%;
@@ -581,6 +586,10 @@ footer {
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
+}
+
+#btn-corvette:hover{
+        background-color: #656565;
 }
 
 #btn-corvette i {
