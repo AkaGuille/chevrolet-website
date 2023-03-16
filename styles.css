@@ -16,19 +16,19 @@ body {
 
 .container-slider {
     width: 100%;
-    max-width:900px;
-    margin: auto; 
+    max-width: 900px;
+    margin: auto;
     position: relative;
-} 
+}
 
-.slider{
+.slider {
     display: flex;
     width: 900%;
     height: 720px;
     margin-right: 100px;
     margin-left: -600px;
     overflow: hidden;
-  
+
 }
 
 
@@ -69,13 +69,16 @@ body {
     cursor: pointer;
 
 }
+
 .slider__btn:hover {
     color: rgb(201, 165, 63);
 
 }
+
 .slider__btn--left {
     left: 10px;
 }
+
 .slider__btn--right {
     right: 10px;
 }
@@ -113,9 +116,9 @@ body {
     background-color: #E9E9E9;
 }
 
-#main-btn hover:{
-        opacity: .7;
-        cursor: grabbing;
+#main-btn :hover{
+    opacity: .7;
+    cursor: grabbing;
 }
 
 #landing-page-text {
@@ -249,7 +252,7 @@ ul li a {
     padding-top: 2%;
 }
 
-#categories-title{
+#categories-title {
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -258,7 +261,7 @@ ul li a {
 
 }
 
-#main-title-cars{
+#main-title-cars {
     margin-left: 34%;
 }
 
@@ -272,7 +275,7 @@ ul li a {
     margin-top: 60px;
 }
 
-#container-slider{
+#container-slider {
     margin-bottom: 30px;
 }
 
@@ -281,163 +284,194 @@ ul li a {
     padding-left: 1%;
 }
 
-input[type="radio"]{display:none}
+input[type="radio"] {
+    display: none
+}
 
-label{
+label {
     text-align: center;
     cursor: pointer;
 }
 
-label:hover{
+label:hover {
     border-bottom: 2px solid rgb(201, 165, 63);
 }
 
-#filter{
-    display: flex;
+#filter {
+    display: block;
 }
 
-#filter-options{
-    margin-bottom: 5%;
+#filter-options {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 100px;
+    align-items: center;
+    margin-left: 30px;
+    margin-left: 30px;
+}
+#filter-options article:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#filter-options section{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#filter-options article{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.suvs{
+
+.suvs {
     display: flex;
     justify-content: space-around;
     margin-top: 3%;
 }
 
-.suvs img{
+.suvs img {
     width: 425px;
     height: 215px;
 }
 
-.suvs article{
+.suvs article {
     width: 425px;
     height: 300px;
     background-color: #4D515A;
     border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px 0px 51px -18px rgba(168,168,168,0.5);
+    box-shadow: 0px 0px 51px -18px rgba(168, 168, 168, 0.5);
 }
 
-.trucks{
+.trucks {
     display: flex;
     justify-content: space-around;
     margin-top: 3%;
 }
 
-.trucks img{
+.trucks img {
     width: 425px;
     height: 215px;
 }
 
-.trucks article{
+.trucks article {
     width: 425px;
     height: 300px;
     background-color: #C9A535;
     border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px 0px 51px -18px rgba(168,168,168,0.5);
+    box-shadow: 0px 0px 51px -18px rgba(168, 168, 168, 0.5);
 }
 
-.electric{
+.electric {
     display: flex;
     justify-content: space-around;
     margin-top: 3%;
 }
 
-.electric img{
+.electric img {
     width: 425px;
     height: 215px;
 }
 
-.electric article{
+.electric article {
     width: 425px;
     height: 300px;
     background-color: #4D515A;
     border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px 0px 51px -18px rgba(168,168,168,0.5);
+    box-shadow: 0px 0px 51px -18px rgba(168, 168, 168, 0.5);
 }
 
-.cars{
+.cars {
     display: flex;
     justify-content: space-around;
     margin-top: 3%;
 }
 
-.cars img{
+.cars img {
     width: 425px;
     height: 215px;
 }
 
-.cars article{
+.cars article {
     width: 425px;
     height: 300px;
     background-color: #C9A535;
     border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px 0px 51px -18px rgba(168,168,168,0.5);
+    box-shadow: 0px 0px 51px -18px rgba(168, 168, 168, 0.5);
 }
 
-.performance{
+.performance {
     display: flex;
     justify-content: space-around;
     margin-top: 3%;
 }
 
-.performance img{
+.performance img {
     width: 425px;
     height: 215px;
 }
 
-.performance article{
+.performance article {
     width: 425px;
     height: 300px;
     background-color: #4D515A;
     border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px 0px 51px -18px rgba(168,168,168,0.5);
+    box-shadow: 0px 0px 51px -18px rgba(168, 168, 168, 0.5);
 }
-.texts-article-vehicles{
+
+.texts-article-vehicles {
     color: white;
     margin-top: 1%;
     margin-left: 4%;
 }
 
-.texts-article-vehicles p{
+.texts-article-vehicles p {
     color: white;
 }
- 
-#categories-section #suvs:checked ~ #filter-options .trucks,
-#categories-section #suvs:checked ~ #filter-options .electric,
-#categories-section #suvs:checked ~ #filter-options .cars,
-#categories-section #suvs:checked ~ #filter-options .performance{
+
+#categories-section #suvs:checked~#filter-options .trucks,
+#categories-section #suvs:checked~#filter-options .electric,
+#categories-section #suvs:checked~#filter-options .cars,
+#categories-section #suvs:checked~#filter-options .performance {
     display: none;
 }
 
-#categories-section #trucks:checked ~ #filter-options .suvs,
-#categories-section #trucks:checked ~ #filter-options .electric,
-#categories-section #trucks:checked ~ #filter-options .cars,
-#categories-section #trucks:checked ~ #filter-options .performance{
+#categories-section #trucks:checked~#filter-options .suvs,
+#categories-section #trucks:checked~#filter-options .electric,
+#categories-section #trucks:checked~#filter-options .cars,
+#categories-section #trucks:checked~#filter-options .performance {
     display: none;
 }
 
-#categories-section #electric:checked ~ #filter-options .suvs,
-#categories-section #electric:checked ~ #filter-options .trucks,
-#categories-section #electric:checked ~ #filter-options .cars,
-#categories-section #electric:checked ~ #filter-options .performance{
+#categories-section #electric:checked~#filter-options .suvs,
+#categories-section #electric:checked~#filter-options .trucks,
+#categories-section #electric:checked~#filter-options .cars,
+#categories-section #electric:checked~#filter-options .performance {
     display: none;
 }
 
-#categories-section #cars:checked ~ #filter-options .suvs,
-#categories-section #cars:checked ~ #filter-options .trucks,
-#categories-section #cars:checked ~ #filter-options .electric,
-#categories-section #cars:checked ~ #filter-options .performance{
+#categories-section #cars:checked~#filter-options .suvs,
+#categories-section #cars:checked~#filter-options .trucks,
+#categories-section #cars:checked~#filter-options .electric,
+#categories-section #cars:checked~#filter-options .performance {
     display: none;
 }
 
-#categories-section #performance:checked ~ #filter-options .suvs,
-#categories-section #performance:checked ~ #filter-options .trucks,
-#categories-section #performance:checked ~ #filter-options .electric,
-#categories-section #performance:checked ~ #filter-options .cars{
+#filter-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 30px 30px 30px;
+    margin-right: 30px;
+}
+
+#categories-section #performance:checked~#filter-options .suvs,
+#categories-section #performance:checked~#filter-options .trucks,
+#categories-section #performance:checked~#filter-options .electric,
+#categories-section #performance:checked~#filter-options .cars {
     display: none;
 }
+
 .rectangle {
     margin-top: -150px;
 }
@@ -566,7 +600,7 @@ footer {
 }
 
 #btn-services {
-    background-color: rgb(93, 93, 93); 
+    background-color: rgb(93, 93, 93);
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -575,7 +609,12 @@ footer {
     font-size: 16px;
     border-radius: 12px;
 }
-
+#btn-services:hover {
+    color: #4d4d4d;
+    background-color: #b3b3b3;
+    transform: scale(1.1);
+    cursor: pointer;
+}
 #btn-corvette {
     background-color: #f2f2f2;
     border: none;
@@ -588,8 +627,26 @@ footer {
     border-radius: 10px;
 }
 
-#btn-corvette:hover{
-        background-color: #656565;
+#featured-parts-section img:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+
+}
+
+#featured-parts-section img{
+    height: 300px;
+    width: 450px;
+}
+#featured-parts-section h2{
+margin-top: 10%;
+}
+
+#btn-corvette:hover {
+    color: #f2f2f2;
+    background-color: #656565;
+    transform: scale(1.1);
+    cursor: pointer;
+    
 }
 
 #btn-corvette i {
@@ -601,9 +658,9 @@ footer {
     width: 139px;
     height: 54px;
     margin-left: 135px;
-    background-color: #f2f2f2;
+    background-color: #7f7f7f;
     border: none;
-    color: rgb(93, 93, 93);
+    color: #f2f2f2;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -612,9 +669,16 @@ footer {
     border-radius: 10px;
 }
 
+#btn-euv1:hover {
+    color: #7f7f7f;
+    background-color: #f2f2f2;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 #btn-euv2 {
     margin-left: 10px;
-    background-color: #8a8a8a;
+    background-color: #7f7f7f;
     border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
@@ -625,23 +689,149 @@ footer {
     border-radius: 10px;
 }
 
-#post-service{
+#btn-euv2:hover {
+    color:#7f7f7f ;
+    background-color: #f2f2f2;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#post-service {
     margin-right: 3%;
 }
 
-#content-service{
+#content-service {
     display: flex;
     margin-left: 3%;
     justify-content: space-between;
 }
 
 
-#p-services{
+#p-services {
     margin-left: 3%;
 }
 
-#service-img{
+#service-img {
     width: 95%;
     margin-left: 3%;
     margin-right: 3%;
+}
+
+@media (max-width: 700px) {
+    .nav-main {
+    }
+    #landing-page-text h1 {
+        font-size: 40px;
+        margin-left: 75px;
+    }
+    #landing-page-text p {
+        margin-top: 75px;
+        font-size: 0px;
+    
+    }
+    #landing-page-text h3 {
+        margin-top: 100px;
+        font-size: 15px;
+        margin-left: 75px;
+    }
+    #landing-page-button button #btn-euv1{
+        display: flexbox;
+        margin: 0 10px;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 40px;
+    }
+    #categories-section h2 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    #categories-title {
+        justify-content: center;
+        align-items: center;
+        align-items: baseline;
+
+    }
+
+    #filter-options {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #filter-options p{
+        margin-left: 20px;
+    }
+
+    #corvette-page h1{
+        font-size: 40px;
+        margin-left: 5px;
+    }
+
+    #btn-corvette {
+        display: flex;
+        margin: 0 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 50px;
+    }
+
+    #container-slider {
+        width: 100%;
+        height: 400px;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #container-slider img{
+        width: 400px;
+        height: 220px;
+        justify-content: center;
+    }
+    #btn-services {
+        display: flex;
+        margin: 0 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 50px;
+    }
+
+    #parts-section {
+        width: 100%;
+        height: 200px;
+    }
+    #parts-section img{
+        width: 50%;
+        height: 200px;
+    }
+    #parts-section h1 {
+        font-size: 30px;
+    }
+    #parts-subtitle{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    #featured-parts-section{
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #featured-parts-section img{
+        width: 300px;
+        height: 200px;
+        
+    }
+
+    #featured-parts-section h2 {
+        font-size: 25px;
+    }
+    #featured-parts-sectionp {
+        font-size: 100px;
+    }
+
 }
