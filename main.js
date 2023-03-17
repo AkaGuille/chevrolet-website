@@ -5,6 +5,31 @@ let sliderSectionLast = sliderSection[sliderSection.length -1];
 const btnLeft = document.querySelector("#btn-left");
 const btnRight = document.querySelector("#btn-right");
 
+document.querySelector('.menu-btn').addEventListener('click', () => {
+
+    document.querySelector('.nav-menu').classList.toggle('show')
+
+
+} )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 
 function moveRight() {
