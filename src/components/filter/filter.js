@@ -1,19 +1,33 @@
-class SectionComponent extends HTMLElement {
+class FilterComponent extends HTMLElement {
 
-    constructor(){
+    constructor() {
         super();
-        this.attachShadow({ mode: 'open' });
-        this.title = this.getAttribute('title');
-        this.render();    
     }
-    
+
+    // this is how you declare which props are you interested in
+    static get observedAttributes() {
+        return ['name', 'image', 'description', 'price', 'model', 'category', 'color'];
+    }
+
+    attributeChangedCallback(propName, oldValue, newValue) {
+        this[propName] = newValue;
+        this.render();
+    }
+
     render() {
-        this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="/src/components/sectionComponent/styles.css">
-        <h2 class="section-title">${this.title}</h2>`
+        this.innerHTML = `
+        <link rel="stylesheet" href="/src/components/productComponent/styles.css">
+        <article class="filter">
+                <h3>${this.name}</h3>
+                <h3>$ ${this.price}</h3>
+                <p>${this.description}</p>
+                <h4>${this.color}</h4>
+                <h4>${this.model}</h4>
+                <h4>${this.category}</h4>
+            </article>`
     }
-    
-    }
-    
-    customElements.define('section-component', SectionComponent)
-    export default SectionComponent;
+
+}
+
+customElements.define('filter-component', FilterComponent)
+export default FilterComponent;

@@ -1,3 +1,32 @@
+import './src/components/filter/filter.js'
+const filterContainer = document.querySelector('#filter-container');
+async function getProducts(){
+    try {
+    let response = await fetch('https://apimocha.com/chevroletcars/cars');
+    let data = await response.json();
+    console.log(data);
+    createCardFilter(data);
+    } catch (e) {
+    console.log(e);
+        }}
+
+getProducts();
+
+function createCardFilter(cars) {
+    cars.forEach(element => {
+        const carOb = document.createElement('filter-component');
+        carOb.setAttribute("name", element.name);
+        carOb.setAttribute("image", element.image);
+        carOb.setAttribute("description", element.description);
+        carOb.setAttribute("price", element.price);
+        carOb.setAttribute("model", element.model);
+        carOb.setAttribute("category", element.category);
+        carOb.setAttribute("color", element.color);
+        filterContainer.append(carOb);
+    });
+}
+
+
 const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider__section");
 let sliderSectionLast = sliderSection[sliderSection.length -1];

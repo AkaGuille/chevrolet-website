@@ -20,21 +20,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
     <title>Chevrolet</title>
-    <script src="src/components/filter/carousel.js"></script>
     <script src="src/components/filter/filter.js"></script>
     <script src="app.js"></script>
+
+    
+<script src="src/components/filter/carousel.js"></script>
+
+
+
+
+
 </head>
 
 <body>
-
-    <my-carousel></my-carousel>
-    <button id="backward">Backward</button>
-    <button id="forward">Forward</button>
-
-
-
     <!--Si-->
+
 
     <header>
         <!--Navegacion-->
@@ -279,65 +283,66 @@
 
         <!--Carousel-->
 
-        <div id="container-slider">
+        <!--Tercer intento del carrusel-->
 
-            <div class="slider" id="slider">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+        <!--Imagenes-->
 
-                <!--Imagen1 BOLT EUV-->
-
-                <div class="slider__section">
-                    <div class="containerja"></div>
-                    <img src="https://assets.static-gm.com/Assets/63a90616-1fa5-40c9-814a-17f4de353956/a7e32d73-c4aa-4142-a0f6-0cde1af569e9/v-1645558907/Desktop.webp"
-                        alt="" class="slider__img1">
-                    <h1>CHEVROLET ONIX</h1>
-                    <p>A suburban sports car</p>
-                    <button id="btn-services">Learn</button>
-
+                <div class="slide first">
+        <!--Imagenes-->
+        <img src="https://assets.static-gm.com/Assets/63a90616-1fa5-40c9-814a-17f4de353956/a7e32d73-c4aa-4142-a0f6-0cde1af569e9/v-1645558907/Desktop.webp" alt="BOLT EUV">
+        <img src="https://www.valleychevy.com/wp-content/uploads/2021/11/color-picker_0001_22CHSpark-Summit-White.png" alt="SPARK">
+        <img src="https://assets.static-gm.com/Assets/925e467e-b354-4c6a-bee7-094286fb63d9/6905cfd6-7a9e-426a-9544-7e1a634c8c8e/v-1621478869/Desktop.png" alt="CAMARO ZL1">
+        <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2023/trucks/silverado-ld/01-images/trims/png/2023-silverado1500-cc10543-1lt-gxd-trimselector.png?imwidth=960" alt="SILVERADO">
+        <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2023/trucks/silverado-ld/01-images/trims/png/2023-silverado1500-cc10543-1lt-gxd-trimselector.png?imwidth=960" alt="SILVERADO">
                 </div>
+        <!--Imagenes-->
 
-                <!--Imagen2 CORVETTE-->
+                <!--Navegacion automatica o eso espero-->
 
-                <div class="slider__section">
-                    <img src="https://www.valleychevy.com/wp-content/uploads/2021/11/color-picker_0001_22CHSpark-Summit-White.png"
-                        alt="" class="slider__img2">
-                    <h1>SPARK</h1>
-                    <p>The future of ecologycal vehicles</p>
-                    <button id="btn-services">Learn</button>
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+                        <!--Navegacion automatica o eso espero-->
+        
+        <div>
 
+            <!--Navegacion manual o eso espero-->
 
-                </div>
-
-                <!--Imagen3 CAMARO-->
-
-                <div class="slider__section">
-                    <img src="https://assets.static-gm.com/Assets/925e467e-b354-4c6a-bee7-094286fb63d9/6905cfd6-7a9e-426a-9544-7e1a634c8c8e/v-1621478869/Desktop.png"
-                        alt="" class="slider__img3">
-                    <h1>CHEVROLET CAMARO ZL1</h1>
-                    <p>Full of V8 power with rear wheel drive</p>
-                    <button id="btn-services">Learn</button>
-                    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-                    <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
-
-                </div>
-
-                <!--Imagen4 SILVERADO-->
-
-                <div class="slider__section">
-                    <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2023/trucks/silverado-ld/01-images/trims/png/2023-silverado1500-cc10543-1lt-gxd-trimselector.png?imwidth=960"
-                        alt="" class="slider__img4">
-                    <h1>SILVERADO TRUCK</h1>
-                    <p>A giant american truck</p>
-                    <button id="btn-services">Learn</button>
-
-                </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
 
             </div>
 
-            <!--Botones del slider-->
-
-
-
+                        <!--Navegacion manual o eso espero-->
         </div>
+    
+            </div>
+        </div>
+
+
+        <!-- <my-carousel>
+            <img src="https://assets.static-gm.com/Assets/63a90616-1fa5-40c9-814a-17f4de353956/a7e32d73-c4aa-4142-a0f6-0cde1af569e9/v-1645558907/Desktop.webp" alt="BOLT EUV">
+            <img src="https://www.valleychevy.com/wp-content/uploads/2021/11/color-picker_0001_22CHSpark-Summit-White.png" alt="SPARK">
+            <img src="https://assets.static-gm.com/Assets/925e467e-b354-4c6a-bee7-094286fb63d9/6905cfd6-7a9e-426a-9544-7e1a634c8c8e/v-1621478869/Desktop.png" alt="CAMARO ZL1">
+            <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2023/trucks/silverado-ld/01-images/trims/png/2023-silverado1500-cc10543-1lt-gxd-trimselector.png?imwidth=960" alt="SILVERADO">
+            <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2023/trucks/silverado-ld/01-images/trims/png/2023-silverado1500-cc10543-1lt-gxd-trimselector.png?imwidth=960" alt="SILVERADO">
+          </my-carousel>
+
+          <button id="backward">Backward</button>
+          <button id="forward">Forward</button> -->
+
 
         <!--Servicio posventa-->
 
@@ -441,19 +446,18 @@
 
     </footer>
 
-    <footer id="mobile-footer">
-        <img id="logo-footer" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c479.png">
-        <h3>Find Chevrolet</h3>
-    </footer>
-
-    <section-component title="Componente 2"></section-component>
+    <div id="filter-container">
+        <filter-component name="Melanie" image="https://assets.stickpng.com/images/580b57fcd9996e24bc43c479.png" description="Hello, Its me" price="5" model="2023" category="suvs" color="red"></filter-component>
+    </div>
+        
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
 
-    <script type="module" src="/src/components/filter/filter.js"></script>
-    <script src="main.js"></script>
+    <!-- <script type="module" src="/src/components/filter/filter.js"></script> -->
+    <!-- <script type="module" src="/src/product.js"></script> -->
+    <script type="module" src="app.js"></script>
 </body>
 
 </html>
