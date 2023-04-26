@@ -16,17 +16,21 @@ class FilterComponent extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="/src/components/productComponent/styles.css">
-        <article class="filter">
-                <h3>${this.name}</h3>
-                <h3>$ ${this.price}</h3>
-                <p>${this.description}</p>
-                <h4>${this.color}</h4>
-                <h4>${this.model}</h4>
-                <h4>${this.category}</h4>
-            </article>`
+        <link rel="stylesheet" href="/src/components/filter/style.css">
+        <section class="filter">
+            <article>
+                <img id="car-image" src = ${this.image}>
+                    <div id="text-car-information">
+                        <h2>${this.name}</h2>
+                        <p>$ ${this.price}</p>
+                        <p>${this.description}</p>
+                        <p>${this.color}</p>
+                        <p>${this.model}</p>
+                        <p>${this.category}</p>
+                    </div>
+            </article>
+        </section>`
     }
-
 }
 
 customElements.define('filter-component', FilterComponent)
