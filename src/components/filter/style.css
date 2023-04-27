@@ -1,12 +1,86 @@
 filter-component{
     margin: 2%;
+    
+}
+
+#filter-categories-titles {
+    font-size: 17px;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 170px;
+    margin-inline-end: auto;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+#filter-categories-titles button {
+    background-color: #f2f2f2;
+    border: none;
+    color: rgb(65, 65, 65);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
 }
 
 
+#filter-categories-titles button:hover {
+    color: #f2f2f2;
+    background-color: #656565;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+#filter-container section {
+    height: 450px ;
+    justify-content: center;
+    align-items: center;
+
+}
+
 #filter-container{
+    color: aliceblue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.filter-component {
+    display: block;
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+#text-car-information {
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    
+
+}
+#text-car-information p{
+    font-weight: lighter;
+    color: aliceblue;
+    margin-bottom: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#text-car-information h2{
+    margin-top: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    margin-bottom: 1px;
 }
 
 .filter{
@@ -18,6 +92,6 @@ filter-component{
     box-shadow: 0px 0px 51px -18px rgba(168, 168, 168, 0.5);
 }
 #car-image{
-    width: 100%;
-    height: 215px; 
+    width: 350px;
+    height: 240px; 
 }

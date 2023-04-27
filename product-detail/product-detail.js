@@ -23,7 +23,6 @@ function organiceProducts(arregloCarros) {
     })
     console.log(product);
 
-
 }
 
 // class productDetail extends HTMLElement {
