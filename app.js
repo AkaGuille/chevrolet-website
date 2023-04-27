@@ -18,6 +18,8 @@ async function getProducts(){
 getProducts();
 
 function createCardFilter(cars, filterType) {
+    // let name = element.name.replaceAll("", "")
+    // let url = "/product-detail/index.html?id=" + name;
     let filterproducts = [];
     filterContainer.innerHTML = ''
     if(!filterType || filterType === 'All'){
@@ -34,7 +36,11 @@ function createCardFilter(cars, filterType) {
         carOb.setAttribute("model", element.model);
         carOb.setAttribute("category", element.category);
         carOb.setAttribute("color", element.color);
+        const enlace = document.createElement('a');
+        // enlace.href = url;
+        // enlace.innerHTML = element.name;
         filterContainer.append(carOb);
+        // filterContainer.appendChild(enlace);
     });
 }
 
