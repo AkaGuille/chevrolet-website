@@ -24,9 +24,8 @@ class FilterComponent extends HTMLElement {
                         <h2>${this.name}</h2>
                         <p>$ ${this.price}</p>
                         <p>${this.description}</p>
-                        <p>${this.color}</p>
-                        <p>${this.model}</p>
                         <p>${this.category}</p>
+                        <p>${this.color}</p>
                     </div>
             </article>
         </section>`

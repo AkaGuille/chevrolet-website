@@ -1,5 +1,22 @@
+filter-component{
+    margin: 2%;
+}
 
+#filter-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter{
+    display: flex;
+    width: 350px;
+    height: 400px;
+    background-color: #4D515A;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 51px -18px rgba(168, 168, 168, 0.5);
+}
 #car-image{
-    width: 300px;
-    height: 215px;
+    width: 100%;
+    height: 215px; 
 }
