@@ -15,8 +15,11 @@ class FilterComponent extends HTMLElement {
     }
 
     render() {
+        let url = this.name.replaceAll(" ", "-");
+        let refDetail = "./product-detail/index.html?id=" +url; 
         this.innerHTML = `
         <link rel="stylesheet" href="/src/components/filter/style.css">
+        <a href=${refDetail}>
         <section class="filter">
             <article>
                 <img id="car-image" src = ${this.image}>
@@ -28,7 +31,8 @@ class FilterComponent extends HTMLElement {
                         <p>${this.color}</p>
                     </div>
             </article>
-        </section>`
+        </section>
+        </a>`
     }
 }
 

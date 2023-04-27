@@ -1,4 +1,4 @@
-import './src/components/filter/filter.js'
+
 
 let arregloCarros = []
 async function getProducts(){
@@ -14,6 +14,14 @@ async function getProducts(){
 getProducts();
 
 function organiceProducts(arregloCarros) {
-    console.log(arregloCarros);
+    let url = window.location.search;
+    let param = new URLSearchParams(url);
+    let productID = param.get("id").replace('"', "");
+    
+    let product = arregloCarros.find((item)=>{
+        let nameCompare = item.name.replaceAll(" ", "-");
+        return nameCompare === productID;
+    })
+    console.log(product);
     
 }
