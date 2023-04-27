@@ -1,22 +1,73 @@
-product-component{
-    margin: 2%;
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#product-container{
+
+.nav-main ul li a {
+    color: black;
+
+}
+.nav-main ul.nav-menu-right {
+    margin-right: 60px;
+    
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+
+}
+
+.nav-main {
+
+    font-size: 17px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+
+}
+
+.nav-brand {
+    width: 50px;
+}
+
+.nav-main img {
+    width: 110px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.nav-main ul {
+    display: flex;
+    margin-top: 1%;
     justify-content: center;
 }
 
-.filter{
-    display: flex;
-    width: 350px;
-    height: 400px;
-    background-color: #4D515A;
-    border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px 0px 51px -18px rgba(168, 168, 168, 0.5);
+
+.nav-main ul li {
+    padding: 10px;
+    list-style: none;
+
 }
-#car-image{
-    width: 100%;
-    height: 215px; 
+
+.nav-main ul li a {
+    padding: 2px;
+    text-decoration: none;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid rgb(201, 165, 63);
+}
+
+#main-btn {
+    width: 20px;
+    height: 10px;
+    background-color: #E9E9E9;
+}
+
+#main-btn :hover{
+    opacity: .7;
+    cursor: grabbing;
 }

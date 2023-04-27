@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product detail</title>
+    <link rel="stylesheet" href="../product-detail/style.css">
 </head>
-<body>
-    <h1>Hola</h1>
 
-    
-    
+<body>
+
+    <script src="product-detail.js"></script>
+
+    <main>
+
+        <header>
+            <!--Navegacion-->
+            <nav class="nav-main">
+
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!--Logo debo cambiarlo, si puedes ayudame a buscarlo en web-->
+                <img src="https://logodownload.org/wp-content/uploads/2014/02/Chevrolet_logo.jpg" alt="Logo"
+                    class="nav-brand">
+                <!--Navegacion-->
+
+                <ul class="nav-menu">
+                    <li id="location-text">
+                        <a href="#">LOCATION <i class="fas fa-location"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">VEHICLES</a>
+                    </li>
+                    <li>
+                        <a href="#">SHOPPING</a>
+                    </li>
+
+                    <li>
+                        <a href="#">FIND OUT</a>
+                    </li>
+
+                    <li>
+                        <a href="">My Chevrolet</a>
+                    </li>
+                </ul>
+                <!--Search y cuenta-->
+                <ul class="nav-menu-right">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </header>
+    </main>
+
+    <product-component>
+        <h1>Nombre del producto</h1>
+        <img src="#" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fuga cumque doloremque sed. Ab enim
+            aspernatur, earum, nobis possimus labore exercitationem eius libero veritatis mollitia vero excepturi,
+            doloremque tempora esse!</p>
+        <button>BUY NOW</button>
+    </product-component>
+
+
+
+
+
 </body>
 <script type="module" src="./product-detail.js"></script>
+
 </html>
