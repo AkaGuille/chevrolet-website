@@ -5,6 +5,10 @@ class FilterComponent extends HTMLElement {
     }
 
     // this is how you declare which props are you interested in
+    connectecCallback(){
+        this.render();
+    }
+
     static get observedAttributes() {
         return ['name', 'image', 'description', 'price', 'model', 'category', 'color'];
     }
