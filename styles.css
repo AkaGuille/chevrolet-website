@@ -20,6 +20,16 @@
     
 }
 
+
+.card-parts-section h2{
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.card-parts-section {
+    margin-bottom: 70px;
+}
+
 body {
     overflow-x: hidden;
     /* margin: 0;
@@ -312,25 +322,28 @@ footer {
     color: white;
 }
 
+
 #parts-title-container article {
     display: block;
     margin-top: 4%;
     margin-left: 3%;
 }
 
+
 #parts-subtitle {
+    font-weight: bold;
     color: #2e2d2d;
-    justify-content: flex-start;
+
     font-size: 25px;
-    margin-left: 1%;
-    margin-top: 1%;
+
 }
 
 #featured-parts-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 1%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .card-parts-section img {
