@@ -6,16 +6,15 @@ filter-component{
 #filter-categories-titles {
     font-size: 17px;
     display: flex;
-    margin-left: 60px;
-    margin-right: 170px;
     margin-inline-end: auto;
     margin-bottom: 10px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 60px;
 }
 
 #filter-categories-titles button {
+    margin-left: 3%;
     background-color: #f2f2f2;
     border: none;
     color: rgb(65, 65, 65);
@@ -56,8 +55,8 @@ filter-component{
 }
 
 #text-car-information {
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 15%;
+    margin-left: 15%;
     margin-top: 5%;
     display: block;
     justify-content: center;
@@ -99,5 +98,5 @@ filter-component{
 
 #car-image{
     width: 100%;
-    height: 90%; 
+    height: 100%; 
 }
