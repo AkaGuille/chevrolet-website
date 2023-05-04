@@ -29,7 +29,7 @@ class FilterComponent extends HTMLElement {
                 <img id="car-image" src = ${this.image}>
                     <div id="text-car-information">
                         <h2>${this.name}</h2>
-                        <p>$ ${this.price}</p>
+                        <h3>$ ${this.price}</h3>
                         <p>${this.description}</p>
                         <p>${this.category}</p>
                         <p>${this.color}</p>

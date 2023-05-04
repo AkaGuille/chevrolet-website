@@ -206,31 +206,6 @@ ul li a {
 
 }
 
-#carousel h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 78px;
-    text-align: center;
-    color: rgb(24, 24, 24);
-}
-
-
-#container-slider h2 {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    color: rgb(93, 93, 93);
-    font-size: 50px;
-    margin-bottom: 30px;
-    margin-top: 60px;
-}
-
-#container-slider {
-    margin-bottom: 30px;
-}
-
 
 input[type="radio"] {
     display: none
@@ -330,7 +305,6 @@ footer {
 #parts-subtitle {
     font-weight: bold;
     color: #2e2d2d;
-
     font-size: 25px;
 
 }
@@ -339,8 +313,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 .card-parts-section img {
@@ -414,8 +386,15 @@ footer {
     height: 300px;
     width: 450px;
 }
+
+#parts-subtitle{
+    margin-left: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 #featured-parts-section h2{
-margin-top: 10%;
+    margin-top: 1%;
 }
 
 #btn-corvette:hover {
@@ -493,6 +472,7 @@ margin-top: 10%;
     margin-left: 3%;
     margin-right: 3%;
 }
+
 
 
 

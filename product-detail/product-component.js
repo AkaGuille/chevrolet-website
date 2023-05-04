@@ -3,7 +3,7 @@ class productComponent extends HTMLElement {
         super();
     }
 
-    connectecCallback(){
+    connectecCallback() {
         this.render();
     }
 
@@ -16,9 +16,9 @@ class productComponent extends HTMLElement {
         this.render();
     }
 
-    render ( ) {
+    render() {
         let url = this.name.replaceAll(" ", "-");
-        let refDetail = "./product-detail/index.html?id=" + url; 
+        let refDetail = "./product-detail/index.html?id=" + url;
         this.innerHTML = `
         <link rel="stylesheet" href="/product-detail/style.css">
         <img src= ${this.image} alt="">
@@ -60,8 +60,10 @@ class productComponent extends HTMLElement {
         <p id="car-price">BASE PRICE: ${this.price}</p>
         <p id="car-description">${this.description}</p>
         <p id="car-category">TYPE: ${this.category}</p>
-        <p id="car-color">COLOR: ${this.color}</p>
+        <p id="car-color">COLOR: ${this.color} <input type="color" id="color-picker"></p>
+        
         <p id="car-color"> ${this.name} INTERIOR </p>
+        
 
         <div class="grid-container">
         <img src="https://www.chevrolet.com.sv/wp-content/uploads/2021/03/1920x1080-album-3.png" alt="Imagen 1">
@@ -77,6 +79,3 @@ class productComponent extends HTMLElement {
 
 customElements.define('product-component', productComponent)
 export default productComponent;
-
-
-

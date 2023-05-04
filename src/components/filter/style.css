@@ -3,6 +3,10 @@ filter-component{
     
 }
 
+a {
+    text-decoration: none;
+  }
+
 #filter-categories-titles {
     font-size: 17px;
     display: flex;
@@ -13,32 +17,18 @@ filter-component{
     height: 60px;
 }
 
-#filter-categories-titles button {
-    margin-left: 3%;
-    background-color: #f2f2f2;
-    border: none;
-    color: rgb(65, 65, 65);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
-}
-
-
-#filter-categories-titles button:hover {
-    color: #f2f2f2;
-    background-color: #656565;
-    transform: scale(1.1);
-    cursor: pointer;
-
-}
 #filter-container section {
     height: 450px ;
     justify-content: center;
     align-items: center;
 
+}
+
+#filter-categories-titles{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 #filter-container{

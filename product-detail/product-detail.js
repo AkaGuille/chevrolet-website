@@ -1,5 +1,7 @@
 import './product-component.js';
 const detailProductContainer = document.querySelector('#detail-product-container');
+const colorPicker = document.getElementById('color-picker');
+const carColor = document.getElementById('car-color');
 
 let arregloCarros = []
 async function getProducts(){
@@ -38,4 +40,5 @@ function organiceProducts(array) {
     console.log(productDetailed);
     console.log(detailProductContainer);
 }
+
 

@@ -4,28 +4,43 @@ const categoriesButtons = document.querySelectorAll('#filter-categories-titles b
 
 console.log(categoriesButtons);
 let arregloCarros = []
-async function getProducts(){
+async function getProducts() {
     try {
-    let response = await fetch('https://apimocha.com/chevroletcars/cars');
-    let data = await response.json();
-    console.log(data);
-    arregloCarros = data;
-    createCardFilter(arregloCarros);
+        let response = await fetch('https://apimocha.com/chevroletcars/cars');
+        let data = await response.json();
+        console.log(data);
+        arregloCarros = data;
+        createCardFilter(arregloCarros);
     } catch (e) {
-    console.log(e);
-        }}
+        console.log(e);
+    }
+}
 
 getProducts();
 
-function createCardFilter(cars, filterType) {
+function createCardFilter(cars, filterType, filterOption) {
     // let name = element.name.replaceAll("", "")
     // let url = "/product-detail/index.html?id=" + name;
     let filterproducts = [];
     filterContainer.innerHTML = ''
-    if(!filterType || filterType === 'All'){
+    if (!filterType || filterType === 'All') {
         filterproducts = cars;
-    } else if(filterType != 'All' && filterType){
-        filterproducts = cars.filter(product => product.category === filterType)
+    } else if (filterType != 'All' && filterType) {
+        console.log(filterType)
+        switch (filterOption) {
+            case 'Category':
+                filterproducts = cars.filter(product => product.category === filterType)
+                break;
+
+            case 'Color':
+                filterproducts = cars.filter(product => product.color === filterType)
+                break;
+
+            case 'Model':
+                filterproducts = cars.filter(product => product.model === filterType)
+                break;
+        }
+
     }
     filterproducts.forEach(element => {
         const carOb = document.createElement('filter-component');
@@ -44,9 +59,21 @@ function createCardFilter(cars, filterType) {
     });
 }
 
-categoriesButtons.forEach(btn => btn.addEventListener('click', ()=> setCategory(btn)))
+categoriesButtons.forEach(btn => btn.addEventListener('click', () => setCategory(btn)))
 
 function setCategory(elem) {
+    let filterOption = '';
     console.log(elem.textContent)
-    createCardFilter(arregloCarros, elem.textContent)
+    if (elem.textContent === "SUVs" || elem.textContent === "Trucks" || elem.textContent === "Electric" ||
+        elem.textContent === "Cars" || elem.textContent === "Performance") {
+        filterOption = "Category";
+    } else if (elem.textContent === "Black" || elem.textContent === "White" || elem.textContent === "Grey" ||
+        elem.textContent === "Red") {
+        filterOption = "Color";
+    } else if (elem.textContent === "2023" || elem.textContent === "2022") {
+        filterOption = "Model";
+    }
+
+    console.log(filterOption);
+    createCardFilter(arregloCarros, elem.textContent, filterOption)
 }

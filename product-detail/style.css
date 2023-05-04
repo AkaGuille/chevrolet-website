@@ -236,6 +236,7 @@ img {
 }
 
 #footer-container h1 {
+    text-decoration: none;
     font-size: 20px;
     color: #5D5D5D;
     margin-bottom: 4%;
@@ -258,4 +259,8 @@ img {
     margin-left: 5%;
     width: 90%;
     height: 90%;
+}
+
+li{
+    marker: none;
 }
