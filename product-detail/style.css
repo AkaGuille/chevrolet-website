@@ -37,6 +37,11 @@ img {
     border-radius: 12px;
 }
 
+#imagencabrona{
+    width: 100%; /* Establece el ancho de la imagen en 200 píxeles */
+    height: 100%;
+}
+
 #btn-car:hover {
     color: #4d4d4d;
     background-color: #b3b3b3;
@@ -45,6 +50,7 @@ img {
 }
 
 #car-title {
+    width: 500px;
     font-weight: bold;
     font-size: 80px;
     color: #fcfcfc;
@@ -70,15 +76,19 @@ img {
 }
 
 #car-description {
-    font-size: 30px;
+    width: 500px;
+    font-size: 20px;
     font-weight: lighter;
-    margin-top: 5%;
+    margin-top: 100px;
     color: rgb(255, 255, 255);
+
 }
 
 #contenedor-titulo-descripcion {
     text-align: left;
-
+    position: relative; /* Establece la posición relativa */
+    top: -500px; 
+    left: -50px;
 }
 
 #car-category {

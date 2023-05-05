@@ -21,7 +21,9 @@ class productComponent extends HTMLElement {
         let refDetail = "./product-detail/index.html?id=" + url;
         this.innerHTML = `
         <link rel="stylesheet" href="/product-detail/style.css">
+        <div id= "imagencabrona">
         <img src= ${this.image} alt="">
+        </div>
 
         <header>
         <!--Navegacion-->
