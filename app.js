@@ -39,6 +39,14 @@ function createCardFilter(cars, filterType, filterOption) {
             case 'Model':
                 filterproducts = cars.filter(product => product.model === filterType)
                 break;
+
+            case 'Ascendent':
+                filterproducts = cars.filter(product => product.price >= 50000)
+                break;
+
+            case 'Descendent':
+                filterproducts = cars.filter(product => product.price <= 49999)
+                break;
         }
 
     }
@@ -72,6 +80,10 @@ function setCategory(elem) {
         filterOption = "Color";
     } else if (elem.textContent === "2023" || elem.textContent === "2022") {
         filterOption = "Model";
+    } else if (elem.textContent === "+50000") {
+        filterOption = "Ascendent";
+    } else if (elem.textContent === "-50000") {
+        filterOption = "Descendent";
     }
 
     console.log(filterOption);
