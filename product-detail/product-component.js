@@ -30,8 +30,7 @@ class productComponent extends HTMLElement {
             <div class="menu-btn">
                 
             </div>
-            <!--Logo debo cambiarlo, si puedes ayudame a buscarlo en web-->
-            <!--Navegacion-->
+
 
             <ul class="nav-menu2">
                 <li id="location-text">
@@ -56,14 +55,21 @@ class productComponent extends HTMLElement {
         </nav>
 
     </header>
+
+    <div  id="carinfo-container">
+    <div id= "contenedor-titulo-descripcion">
         <h2 id="car-title" style="position: absolute; top: 90%; transform: translate(-50%, -50%);">${this.name}</h2>
+        <p id="car-description" style="position: absolute; top: 90%; transform: translate(-50%, -50%);">${this.description}</p>
+</div>
         <p id="car-price">BASE PRICE: ${this.price}</p>
-        <p id="car-description">${this.description}</p>
-        <p id="car-category">TYPE: ${this.category}</p>
         <p id="car-color">COLOR: ${this.color} <input type="color" id="color-picker"></p>
-        
-        <p id="car-color"> ${this.name} INTERIOR </p>
-        
+
+        </div>
+
+        <div  id="interior-container">
+        <p id="car-interior"> ${this.name} INTERIOR </p>
+        </div>
+
 
         <div class="grid-container">
         <img src="https://www.chevrolet.com.sv/wp-content/uploads/2021/03/1920x1080-album-3.png" alt="Imagen 1">

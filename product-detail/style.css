@@ -6,6 +6,25 @@ img {
     width: 100%;
     height: 50%;
 }
+#interior-container {
+    text-align: left;
+
+    display: flex;
+    flex-direction: row; /* Establece la dirección del eje principal */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+
+}
+
+#carinfo-container {
+    text-align: left;
+
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row; /* Establece la dirección del eje principal */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
 
 #btn-car {
     background-color: rgb(93, 93, 93);
@@ -26,29 +45,40 @@ img {
 }
 
 #car-title {
-    margin-left: 30%;
     font-weight: bold;
     font-size: 80px;
-    color: #E9E9E9;
+    color: #fcfcfc;
 
 
 }
+#car-interior {
+    margin-top: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #646464;
 
+
+}
 #car-price {
     font-weight: bold;
     margin-top: 1%;
     margin-left: 5%;
     justify-content: center;
     font-size: 35px;
-    color: rgb(121, 0, 0);
+    color: rgb(204, 0, 0);
 }
 
 #car-description {
-    font-weight: bold;
-    margin-top: 1%;
-    margin-left: 5%;
-    font-size: 20px;
-    color: rgb(73, 73, 73);
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 5%;
+    color: rgb(255, 255, 255);
+}
+
+#contenedor-titulo-descripcion {
+    text-align: left;
+
 }
 
 #car-category {
