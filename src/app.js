@@ -1,4 +1,5 @@
 import './components/filter/filter.js'
+import { getCars } from './firebase.js';
 const filterContainer = document.querySelector('#filter-container');
 const categoriesButtons = document.querySelectorAll('#filter-categories-titles button')
 
@@ -9,7 +10,7 @@ async function getProducts() {
         let response = await fetch('https://apimocha.com/chevroletcars/cars');
         let data = await response.json();
         console.log(data);
-        arregloCarros = data;
+        arregloCarros = await getCars();
         createCardFilter(arregloCarros);
     } catch (e) {
         console.log(e);

@@ -56,20 +56,17 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
-export async function getProdcuts() {
+export async function getCars(){
     const allProducts = [];
-
     const querySnapshot = await getDocs(collection(db, "products"));
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
-        allProducts.push({
-            ...doc.data(),
-            id: doc.id
-        });
+        allProducts.push({...doc.data(), id: doc.id});
     });
 
-    return allProducts;
+    return allProducts;
 }
+
 
 export async function addProduct(product) {
     try {
@@ -105,6 +102,30 @@ export async function uploadFile(name, file, folder) {
         console.log("error creando imagen ->", error);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export async function createUser(email, password, username, file) {
     try {
