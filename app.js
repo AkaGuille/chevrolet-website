@@ -60,10 +60,6 @@ function createCardFilter(cars, filterType, filterOption) {
         carOb.setAttribute("category", element.category);
         carOb.setAttribute("color", element.color);
         const enlace = document.createElement('a');
-        // enlace.href = url;
-        // enlace.innerHTML = element.name;
-        filterContainer.append(carOb);
-        // filterContainer.appendChild(enlace);
     });
 }
 

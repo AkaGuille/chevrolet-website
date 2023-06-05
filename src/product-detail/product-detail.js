@@ -24,6 +24,9 @@ function organiceProducts(array) {
     let url = window.location.search;
     let param = new URLSearchParams(url);
     let productID = param.get("id").replace('"', "");
+    console.log(url);
+    console.log(productID);
+    console.log(param);
     let product = arregloCarros.find((item)=>{
         let nameCompare = item.name.replaceAll(" ", "-");
         return nameCompare === productID;
