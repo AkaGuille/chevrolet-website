@@ -61,12 +61,12 @@ function createCardFilter(cars, filterType, filterOption) {
         carOb.setAttribute("category", element.category);
         carOb.setAttribute("color", element.color);
         const enlace = document.createElement('a');
-        var favoriteButton = document.createElement('button');
+        const favoriteButton = document.createElement('button');
         favoriteButton.classList.add('favorite-button');
         favoriteButton.innerText = 'Agregar a favoritos';
         favoriteButton.addEventListener('click', function() {
             // Agrega el producto a la lista de favoritos
-            console.log("Botón de favoritos");
+            console.log(favoriteButton);
         });
         // enlace.href = url;
         // enlace.innerHTML = element.name;

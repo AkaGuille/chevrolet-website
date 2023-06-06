@@ -1,1 +1,122 @@
-<h3>Hola</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./components/filter/style.css">
+    <!--Recursos que podemos usar-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product-detail/style.css">
+    <title>Vehicles</title>
+    <script src="./components/filter/filter.js"></script>
+    <script src="app.js"></script>
+    <script src="./product-detail/product-detail.js"> </script>
+</head>
+<body>
+    <header>
+        <!--Navegacion-->
+        <nav class="nav-main">
+            <!--Logo debo cambiarlo, si puedes ayudame a buscarlo en web-->
+            <a href="./index.html"><img src="https://logodownload.org/wp-content/uploads/2014/02/Chevrolet_logo.jpg" alt="Logo"
+                class="nav-brand"></a>
+            <!--Navegacion-->
+
+            <ul class="nav-menu">
+                <li id="location-text">
+                    <a href="#">LOCATION
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./vehicles.html">VEHICLES</a>
+                </li>
+                <li>
+                    <a href="#">SHOPPING</a>
+                </li>
+
+                <li>
+                    <a href="#">FIND OUT</a>
+                </li>
+
+                <li>
+                    <a href="">My Chevrolet</a>
+                </li>
+            </ul>
+            <!--Search y cuenta-->
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <section id="filter-categories-titles">
+        <div>
+            <h3>Category</h3>
+            <button type="button" class="btn btn-secondary">SUVs</button>
+            <button type="button" class="btn btn-secondary">Performance</button>
+            <button type="button" class="btn btn-secondary">Cars</button>
+            <button type="button" class="btn btn-secondary">Trucks</button>
+            <button type="button" class="btn btn-secondary">Electric</button>
+        </div>
+
+        <div>
+            <h3>Color</h3>
+            <button type="button" class="btn btn-danger">Red</button>
+            <button type="button" class="btn btn-dark">Black</button>
+            <button type="button" class="btn btn-light">White</button>
+            <button type="button" class="btn btn-secondary">Grey</button>
+        </div>
+
+        <div>
+            <h3>Model</h3>
+            <button type="button" class="btn btn-success">2023</button>
+            <button type="button" class="btn btn-secondary">2022</button>
+        </div>
+
+        <div>
+            <h3>Price</h3>
+            <button type="button" class="btn btn-secondary">+50000</button>
+            <button type="button" class="btn btn-secondary">-50000</button>
+        </div>
+
+        
+        
+        
+
+    </section>
+
+
+
+    <div id="filter-container">
+    </div>
+
+
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

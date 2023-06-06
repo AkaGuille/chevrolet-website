@@ -27,7 +27,7 @@ import {
 } from "firebase/auth";
 import {
     userValidation
-} from './userValidation.js'
+} from './userValidation'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -38,7 +38,7 @@ const firebaseConfig = {
     messagingSenderId: "426490634395",
     appId: "1:426490634395:web:9607700a87ca73d1d3663e",
     measurementId: "G-T59RWQ8HYW"
-};
+  };
 
 // Initialize Firebase, firestore, Storage, Auth
 const app = initializeApp(firebaseConfig);
@@ -71,6 +71,7 @@ export async function getCars(){
 export async function addProduct(product) {
     try {
         const docRef = await addDoc(collection(db, "products"), product);
+        console.log("Si funciona");
 
         console.log("Document written with ID: ", docRef.id);
     } catch (e) {
@@ -102,30 +103,6 @@ export async function uploadFile(name, file, folder) {
         console.log("error creando imagen ->", error);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export async function createUser(email, password, username, file) {
     try {

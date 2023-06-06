@@ -1,5 +1,5 @@
 import '../global.scss'
-import { getProdcuts, addProduct, addProductWithId, logOut } from '../firebase.js'
+import { getProdcuts, addProduct, addProductWithId, logOut } from '../firebase'
 
 let products = []
 await retrieveProducts()
