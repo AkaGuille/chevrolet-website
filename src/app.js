@@ -1,4 +1,6 @@
 import './components/filter/filter.js'
+import './firebase.js';
+import { addProduct } from './firebase.js';
 import { getCars } from './firebase.js';
 const filterContainer = document.querySelector('#filter-container');
 const categoriesButtons = document.querySelectorAll('#filter-categories-titles button')
@@ -18,6 +20,34 @@ async function getProducts() {
 }
 
 getProducts();
+
+const formulario = document.querySelector("#form");
+
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const inputName = document.querySelector('#name').value;
+    const inputImage = document.querySelector('#image').value;
+    const inputDescription = document.querySelector('#description').value;
+    const inputPrice = document.querySelector('#price').value;
+    const inputModel = document.querySelector('#model').value;
+    const inputCategory = document.querySelector('#category').value;
+    const inputColor = document.querySelector('#color').value;
+
+    const nuevoProducto = {
+        category: inputCategory,
+        color: inputColor,
+        description: inputDescription,
+        image: inputImage,
+        model: inputModel,
+        name: inputName,
+        price: inputPrice
+    }
+    console.log(nuevoProducto);
+
+    addProduct(nuevoProducto, "products");
+})
+
 
 function createCardFilter(cars, filterType, filterOption) {
     // let name = element.name.replaceAll("", "")
@@ -64,9 +94,23 @@ function createCardFilter(cars, filterType, filterOption) {
         const favoriteButton = document.createElement('button');
         favoriteButton.classList.add('favorite-button');
         favoriteButton.innerText = 'Agregar a favoritos';
-        favoriteButton.addEventListener('click', function() {
+        favoriteButton.addEventListener('click', () => {
             // Agrega el producto a la lista de favoritos
-            console.log(favoriteButton);
+            console.log(`agregado ${element.name}`);
+
+            const productoFavorito = {
+                category: element.category,
+                color: element.color,
+                description: element.description,
+                image: element.image,
+                model: element.model,
+                name: element.name,
+                price: element.price
+            }
+
+            addProduct(productoFavorito, "favorites");
+
+
         });
         // enlace.href = url;
         // enlace.innerHTML = element.name;

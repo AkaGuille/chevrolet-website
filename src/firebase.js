@@ -68,9 +68,9 @@ export async function getCars(){
 }
 
 
-export async function addProduct(product) {
+export async function addProduct(product, coleccion) {
     try {
-        const docRef = await addDoc(collection(db, "products"), product);
+        const docRef = await addDoc(collection(db, coleccion), product);
         console.log("Si funciona");
 
         console.log("Document written with ID: ", docRef.id);
