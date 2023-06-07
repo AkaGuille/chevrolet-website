@@ -1,4 +1,6 @@
 import './src/components/filter/filter.js'
+import './src/add-products/addProducts.js'
+import { addProduct } from './src/firebase.js';
 const filterContainer = document.querySelector('#filter-container');
 const categoriesButtons = document.querySelectorAll('#filter-categories-titles button')
 
@@ -20,6 +22,35 @@ async function getProducts() {
 }
 
 getProducts();
+
+addCar.addEventListener('click', async () => await handleClick())
+
+async function handleClick() {
+    const inputName = document.querySelector('#name').value;
+    console.log(inputName);
+    const inputImage = document.querySelector('#image').value;
+    const inputDescription = document.querySelector('#description').value;
+    const inputPrice = document.querySelector('#price').value;
+    const inputModel = document.querySelector('#model').value;
+    const inputCategory = document.querySelector('#category').value;
+    const inputColor = document.querySelector('#color').value;
+
+    inputObject = {
+        name: inputName,
+        image: inputImage,
+        description: inputDescription,
+        price: inputPrice,
+        model: inputModel,
+        category: inputCategory,
+        color: inputColor,
+    }
+
+    const inputTask = document.getElementById('input-todo')
+    const inputText = inputTask.value;
+  
+    await addProduct(inputObject);
+    await render();
+  }
 
 /*
 // Agrega un controlador de eventos para el envío del formulario
