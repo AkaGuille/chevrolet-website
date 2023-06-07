@@ -8,6 +8,52 @@
     border: none;
 }
 
+#addProducts {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+#addProducts h1 {
+    margin-top: 0;
+}
+
+#addProducts .form-group {
+    margin-bottom: 15px;
+}
+
+#addProducts label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#addProducts button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addProducts button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 #categories1 {
     display: flex;
     justify-content: center;
@@ -16,13 +62,13 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: light;
     font-size: xx-large;
-    
-    
-    
+
+
+
 }
 
 
-.card-parts-section h2{
+.card-parts-section h2 {
     margin-top: 50px;
     font-weight: bold;
 }
@@ -86,7 +132,7 @@ body {
     background-color: #E9E9E9;
 }
 
-#main-btn :hover{
+#main-btn :hover {
     opacity: .7;
     cursor: grabbing;
 }
@@ -193,7 +239,7 @@ ul li a {
 
 }
 
-.nav-main li a{
+.nav-main li a {
     list-style: none;
     border-bottom: none;
     color: black;
@@ -358,12 +404,14 @@ footer {
     font-size: 16px;
     border-radius: 12px;
 }
+
 #btn-services:hover {
     color: #4d4d4d;
     background-color: #b3b3b3;
     transform: scale(1.1);
     cursor: pointer;
 }
+
 #btn-corvette {
     background-color: #f2f2f2;
     border: none;
@@ -376,24 +424,24 @@ footer {
     border-radius: 10px;
 }
 
-#featured-parts-section img:hover{
+#featured-parts-section img:hover {
     transform: scale(1.02);
     cursor: pointer;
 
 }
 
-#featured-parts-section img{
+#featured-parts-section img {
     height: 300px;
     width: 450px;
 }
 
-#parts-subtitle{
+#parts-subtitle {
     margin-left: 3%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-#featured-parts-section h2{
+#featured-parts-section h2 {
     margin-top: 1%;
 }
 
@@ -402,7 +450,7 @@ footer {
     background-color: #656565;
     transform: scale(1.1);
     cursor: pointer;
-    
+
 }
 
 #btn-corvette i {
@@ -446,7 +494,7 @@ footer {
 }
 
 #btn-euv2:hover {
-    color:#7f7f7f ;
+    color: #7f7f7f;
     background-color: #f2f2f2;
     transform: scale(1.1);
     cursor: pointer;
@@ -483,57 +531,59 @@ footer {
 
     }
 
-    
-.nav-main ul.nav-menu {
-    position: relative;
-    z-index: 3;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #eaeaea;
-    height: 100%;
-    padding: 30px;
-    opacity: .8;
-    transform: translateX(-400px);
-    transition: transform .5s ease-in-out;
 
-}
+    .nav-main ul.nav-menu {
+        position: relative;
+        z-index: 3;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #eaeaea;
+        height: 100%;
+        padding: 30px;
+        opacity: .8;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
 
-.nav-main ul.nav-menu.show {
-    transform: translateX(-20px);
+    }
 
-}
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
 
-#filter-options section {
-    width: 1100px;
-    height: 20px;
-    margin-bottom: 320px;
+    }
+
+    #filter-options section {
+        width: 1100px;
+        height: 20px;
+        margin-bottom: 320px;
 
 
-}
+    }
 
-.nav-main ul.nav-menu li {
-    padding: 20px;
-    font-size: 14px;
+    .nav-main ul.nav-menu li {
+        padding: 20px;
+        font-size: 14px;
 
-    
-}
 
-.nav-main ul.nav-menu-right {
-    margin-right: 60px;
-    
-}
-    
+    }
+
+    .nav-main ul.nav-menu-right {
+        margin-right: 60px;
+
+    }
+
     #landing-page-text h1 {
         font-size: 40px;
         margin-left: 75px;
     }
+
     #landing-page-text p {
         margin-top: 75px;
         font-size: 0px;
     }
-    #landing-page-button #btn-euv2{
+
+    #landing-page-button #btn-euv2 {
         display: flex;
         margin-top: 60px;
         margin-left: 60px;
@@ -542,6 +592,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     #categories-section #categories-title {
         font-size: 30px;
     }
@@ -571,15 +622,16 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    #filter-options p{
+
+    #filter-options p {
         margin-left: 20px;
     }
 
-    #corvette-page h1{
+    #corvette-page h1 {
         display: flex;
         font-size: 40px;
         margin: 0 -70px;
-        
+
     }
 
     #corvette-text {
@@ -594,7 +646,7 @@ footer {
         height: 20px;
         justify-content: center;
         align-items: center;
-    
+
     }
 
     #container-slider {
@@ -606,7 +658,8 @@ footer {
         align-items: center;
 
     }
-    #container-slider img{
+
+    #container-slider img {
         display: flex;
         margin: 0 165px;
         width: 300px;
@@ -629,33 +682,37 @@ footer {
         width: 100%;
         height: 200px;
     }
-    #parts-section img{
+
+    #parts-section img {
         width: 50%;
         height: 200px;
     }
+
     #parts-section h1 {
         font-size: 30px;
     }
-    #parts-subtitle{
+
+    #parts-subtitle {
         font-size: 20px;
         margin-left: 10px;
     }
 
-    #featured-parts-section{
+    #featured-parts-section {
         width: 50%;
         justify-content: center;
         align-items: center;
     }
 
-    #featured-parts-section img{
+    #featured-parts-section img {
         width: 300px;
         height: 200px;
-        
+
     }
 
     #featured-parts-section h2 {
         font-size: 25px;
     }
+
     #featured-parts-sectionp {
         font-size: 100px;
     }
@@ -675,39 +732,43 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     #container-slider .slider p {
         margin: 0 180px;
         font-size: 14px;
         margin-bottom: 10px;
 
     }
+
     #container-slider .slider button {
         margin: 0 250px;
     }
 
-    #footer-container ul li p{
+    #footer-container ul li p {
         font-size: 12px;
     }
 
-    #footer-container img{
+    #footer-container img {
         margin-left: 130px;
         width: 50px;
         height: 25px;
-}
+    }
 
-#featured-parts-section .card-parts-section img {
+    #featured-parts-section .card-parts-section img {
         margin-left: 180px;
         width: 375px;
         height: 200px;
-}
-#featured-parts-section .card-parts-section h2 {
-    margin-left: 180px;
-    font-weight: bolder;
-}
-#featured-parts-section .card-parts-section p {
-    margin-left: 180px;
-    font-size: 15px;
-}
+    }
+
+    #featured-parts-section .card-parts-section h2 {
+        margin-left: 180px;
+        font-weight: bolder;
+    }
+
+    #featured-parts-section .card-parts-section p {
+        margin-left: 180px;
+        font-size: 15px;
+    }
 
 
 

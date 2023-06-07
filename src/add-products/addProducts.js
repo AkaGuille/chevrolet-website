@@ -1,5 +1,5 @@
 import '../global.scss'
-import { getProdcuts, addProduct, addProductWithId, logOut } from '../firebase'
+import { getCars, addProduct, addProductWithId, logOut } from '../firebase'
 
 let products = []
 await retrieveProducts()
@@ -15,11 +15,11 @@ submitbtn.addEventListener('click', (e) => uploadProduct(e))
 logOutBtn.addEventListener('click', () => logOut())
 
 async function retrieveProducts() {
-    products = await getProdcuts()
+    products = await getCars()
 }
 
 function renderProducts() {
-    const container = document.querySelector('#products-container')
+    const container = document.querySelector('#filter-container')
 
     container.innerHTML = ''
 
