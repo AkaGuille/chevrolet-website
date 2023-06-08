@@ -56,9 +56,9 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
-export async function getCars(){
+export async function getCars(section){
     const allProducts = [];
-    const querySnapshot = await getDocs(collection(db, "products"));
+    const querySnapshot = await getDocs(collection(db, section));
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         allProducts.push({...doc.data(), id: doc.id});

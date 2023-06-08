@@ -8,19 +8,6 @@ import {
 } from './firebase.js';
 const filterContainer = document.querySelector('#filter-container');
 const categoriesButtons = document.querySelectorAll('#filter-categories-titles button');
-const favoriteFilter = document.querySelector('#favorite-filter-button');
-
-/*
-let pressedButton = false;
-
-favoriteFilter.addEventListener("click", ()=> {
-    filterContainer.innerHTML = ''
-    pressedButton = true;
-    console.log("Si funciono");
-    console.log(pressedButton);
-});
-
-*/
 
 console.log(categoriesButtons);
 let arregloCarros = []
@@ -31,7 +18,7 @@ async function getProducts() {
     let data = await response.json();
     console.log(data);
             console.log("Aquí estoooy productos");
-            arregloCarros = await getCars("products");
+            arregloCarros = await getCars("favorites");
             console.log(arregloCarros);
             createCardFilter(arregloCarros);
 
