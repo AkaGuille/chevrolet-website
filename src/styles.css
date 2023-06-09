@@ -8,15 +8,31 @@
     border: none;
 }
 
-#addProducts {
+#title-page {
     display: flex;
     justify-content: center;
-    text-align: center;
-    width: 400px;
+    align-items: center;
+}
+
+.favorite-button{
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #383e3f;
+    color: white;
+}
+
+#addProducts {
+    position: relative;
+  width: 400px; /* Ajusta el ancho del formulario según tus necesidades */
+  margin: 0 auto;
+  top: 50%;
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 5px;
 }
+
+
 
 #addProducts h1 {
     margin-top: 0;
@@ -42,8 +58,11 @@ textarea {
 }
 
 #addProducts button[type="submit"] {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
     padding: 8px 16px;
-    background-color: #4CAF50;
+    background-color: #d6d313;
     color: white;
     border: none;
     border-radius: 4px;
@@ -51,7 +70,7 @@ textarea {
 }
 
 #addProducts button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #6b5700;
 }
 
 #categories1 {
@@ -525,12 +544,19 @@ footer {
 
 
 @media(max-width: 700px) {
-
     .body {
         overflow-x: hidden;
 
     }
 
+    #filter-categories-titles{
+        display: none;
+    }
+
+    #favorite-filter-button{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
 
     .nav-main ul.nav-menu {
         position: relative;

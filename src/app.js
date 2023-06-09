@@ -108,10 +108,11 @@ function createCardFilter(cars, filterType, filterOption) {
         carOb.setAttribute("model", element.model);
         carOb.setAttribute("category", element.category);
         carOb.setAttribute("color", element.color);
-        const enlace = document.createElement('a');
         const favoriteButton = document.createElement('button');
         favoriteButton.classList.add('favorite-button');
-        favoriteButton.innerText = 'Agregar a favoritos';
+        favoriteButton.innerText = 'Add to favorites';
+        const enlace = document.createElement('a');
+        
         favoriteButton.addEventListener('click', () => {
             // Agrega el producto a la lista de favoritos
             console.log(`agregado ${element.name}`);

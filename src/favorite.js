@@ -96,30 +96,8 @@ function createCardFilter(cars, filterType, filterOption) {
         carOb.setAttribute("category", element.category);
         carOb.setAttribute("color", element.color);
         const enlace = document.createElement('a');
-        const favoriteButton = document.createElement('button');
-        favoriteButton.classList.add('favorite-button');
-        favoriteButton.innerText = 'Agregar a favoritos';
-        favoriteButton.addEventListener('click', () => {
-            // Agrega el producto a la lista de favoritos
-            console.log(`agregado ${element.name}`);
-
-            const productoFavorito = {
-                category: element.category,
-                color: element.color,
-                description: element.description,
-                image: element.image,
-                model: element.model,
-                name: element.name,
-                price: element.price
-            }
-
-            addProduct(productoFavorito, "favorites");
-
-
-        });
         // enlace.href = url;
         // enlace.innerHTML = element.name;
-        carOb.appendChild(favoriteButton);
         filterContainer.append(carOb);
         // filterContainer.appendChild(enlace);
     });
